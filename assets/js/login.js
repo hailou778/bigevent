@@ -54,7 +54,7 @@ $(function(){
           $.ajax({
               data,
               type:'POST',
-              url:"http://ajax.frontend.itheima.net/api/reguser",
+              url:"/api/reguser",
               success:function(res){
                     if(res.status!==0){
                             return layer.msg(res.message); 
@@ -74,22 +74,25 @@ $(function(){
             let data=$(this).serialize()
             $.ajax({
                 type:'POST',
-                url:"http://ajax.frontend.itheima.net/api/login",
+                url:"/api/login",
                 data,
-                success:function(res){
-                    if(res.status!==0){
-                            return layer.msg(res.message)
-                        }
-                        //登录成功
-                        layer.msg(res.message);
-                        layer.msg('关闭后想跳首页',{
-                            time:2000,
-                        }, function(){
-                           
-                            //do something
-                            location.href='/home/index.html';
-                          }); 
-                }
+              success:function(res){
+                  if(res.status!==0){
+                          return layer.msg(res.message)
+                      }
+                      //登录成功
+
+                      //存储token令牌
+                    localStorage.setItem('token',res.token)
+                      layer.msg(res.message);
+                      layer.msg('关闭后想跳首页',{
+                          time:2000,
+                      }, function(){
+                         
+                          //do something
+                          location.href='/home/index.html';
+                        }); 
+              }
 
             })
       })
