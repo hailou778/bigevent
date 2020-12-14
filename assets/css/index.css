@@ -1,0 +1,30 @@
+#footCenter {
+  text-align: center;
+}
+.iconfont {
+  margin-right: 10px;
+}
+.layui-icon {
+  margin-left: 30px;
+}
+.layui-body {
+  overflow: hidden;
+}
+.textAvatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #009688;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  display: none;
+}
+#welcome {
+  font-size: 12px;
+}
+#userInfo2 {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+}

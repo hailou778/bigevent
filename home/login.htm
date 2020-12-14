@@ -17,53 +17,98 @@
       <div class="title"></div>
       <div class="dengzhu">
         <div class="login">
-            <form class="layui-form" id="loginForm">
-                <div class="layui-form-item">
-                  <i class="layui-icon layui-icon-username"></i>
-                  <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
-                    class="layui-input">
-                </div>
-                <div class="layui-form-item">
-                  <i class="layui-icon layui-icon-password"></i>
-                  <input type="password" name="password" required lay-verify="required|pass" placeholder="请输入密码"
-                    autocomplete="off" class="layui-input">
-                </div>
-                <div class="layui-form-item">
-                  <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo">登 录</button>
-                </div>
-                <a href="javascript:;" id="goDl">去 注 册</a>
-              </form>
-          
+          <form class="layui-form" id="loginForm">
+            <div class="layui-form-item">
+              <i class="layui-icon layui-icon-username"></i>
+              <input
+                type="text"
+                name="username"
+                required
+                lay-verify="required"
+                placeholder="请输入用户名"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+            <div class="layui-form-item">
+              <i class="layui-icon layui-icon-password"></i>
+              <input
+                type="password"
+                name="password"
+                required
+                lay-verify="required|pass"
+                placeholder="请输入密码"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+            <div class="layui-form-item">
+              <button
+                class="layui-btn layui-btn-fluid layui-btn-normal"
+                lay-submit
+                lay-filter="formDemo"
+              >
+                登 录
+              </button>
+            </div>
+            <a href="javascript:;" id="goDl">去 注 册</a>
+          </form>
         </div>
         <div class="zhuce">
-            <form class="layui-form" id="regiForm">
-                <div class="layui-form-item">
-                  <i class="layui-icon layui-icon-username"></i>
-                  <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
-                    class="layui-input">
-                </div>
-                <div class="layui-form-item">
-                  <i class="layui-icon layui-icon-password"></i>
-                  <input type="password" name="password" required lay-verify="required|pass" placeholder="请输入密码"
-                    autocomplete="off" class="layui-input passIpt">
-                </div>
-                <div class="layui-form-item">
-                  <i class="layui-icon layui-icon-password"></i>
-                  <input type="password" name="repassword" required lay-verify="required|pass|repass" placeholder="请再次输入密码"
-                    autocomplete="off" class="layui-input">
-                </div>
-                <div class="layui-form-item">
-                  <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo">注 册</button>
-                </div>
-                <a href="javascript:;" id="goZe">登 录</a>
-              </form>
-         
+          <form class="layui-form" id="regiForm">
+            <div class="layui-form-item">
+              <i class="layui-icon layui-icon-username"></i>
+              <input
+                type="text"
+                name="username"
+                required
+                lay-verify="required"
+                placeholder="请输入用户名"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+            <div class="layui-form-item">
+              <i class="layui-icon layui-icon-password"></i>
+              <input
+                type="password"
+                name="password"
+                required
+                lay-verify="required|pass"
+                placeholder="请输入密码"
+                autocomplete="off"
+                class="layui-input passIpt"
+              />
+            </div>
+            <div class="layui-form-item">
+              <i class="layui-icon layui-icon-password"></i>
+              <input
+                type="password"
+                name="repassword"
+                required
+                lay-verify="required|pass|repass"
+                placeholder="请再次输入密码"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+            <div class="layui-form-item">
+              <button
+                class="layui-btn layui-btn-fluid layui-btn-normal"
+                lay-submit
+                lay-filter="formDemo"
+              >
+                注 册
+              </button>
+            </div>
+            <a href="javascript:;" id="goZe">登 录</a>
+          </form>
         </div>
       </div>
     </div>
     <script src="/assets/lib/layui/layui.all.js"></script>
     <script src="/assets/lib/jquery.js"></script>
-    <link rel="stylesheet" href="/assets/js/rootpath.js">
+    <script src="/assets/js/rootpath.js"></script>
     <script src="/assets/js/login.js"></script>
   </body>
 </html>
