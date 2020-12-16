@@ -33,7 +33,7 @@
               <dd><a href="javascript:;">重置密码</a></dd>
             </dl>
           </li>
-          <li class="layui-nav-item"><a href=""><span class="iconfont icon-tuichu"></span>退 出</a></li>
+          <li class="layui-nav-item"><a href="javascript:;" id="goOut"><span class="iconfont icon-tuichu"></span>退 出</a></li>
         </ul>
       </div>
 
@@ -45,7 +45,7 @@
               <img src="http://t.cn/RCzsdCq" class="layui-nav-img" />
               <!-- 文字头像 -->
               <span class="textAvatar">T</span>
-              <span class="text" id="welcome"> T t</span>
+              <span class="text" id="welcome"></span>
             </div>
             <li class="layui-nav-item layui-this"><a href="/home/dashboard.html" target="layuiBody"><span class="iconfont icon-home"></span>首页</a></li>
             <li class="layui-nav-item ">
@@ -59,18 +59,18 @@
             <li class="layui-nav-item">
               <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
               <dl class="layui-nav-child">
-                <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
-                <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
-                <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+                <dd><a href="/user/basics.html" target="layuiBody"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
+                <dd><a href="/user/avatar.html" target="layuiBody"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
+                <dd><a href="/user/repwd.html" target="layuiBody"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
               </dl>
             </li>
-          </ul>
-        </div>
+            </ul>
+          </div>
       </div>
 
       <div class="layui-body">
         <!-- 内容主体区域 -->
-       <iframe style="width: 100%;height: 100%;" src="/home/dashboard.html" frameborder="0" name="layuiBody"></iframe>
+       <iframe style="width: 100%;height: 100%;" src="/user/avatar.html" frameborder="0" name="layuiBody"></iframe>
       </div>
 
       <div class="layui-footer" id="footCenter" >

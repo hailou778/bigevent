@@ -2,13 +2,13 @@ let layer=layui.layer
 function basicInformation(){
 $.ajax({
     url:'/my/userinfo',
-    headers:{
-        Authorization:localStorage.getItem('token'),
-    },
+    // headers:{
+    //     Authorization:localStorage.getItem('token'),
+    // },
     success:function(res){
-            console.log(res);
+           
             let name=res.data.nickname||res.data.username;
-            console.log(name);
+         
             if(res.status!==0){
               return  lay.msg('获取用户信息失败')
             }
@@ -19,10 +19,27 @@ $.ajax({
                 $('.textAvatar').hide()
             }else{
                 //显示文字头像，隐藏头像
-                $('.textAvatar').show().text(name[0].toUpperCase());
+                $('.textAvatar').text(name[0].toUpperCase()).css('display','inline-block');
                 $('.layui-nav-img').hide()
             }
+    },
+    complete:function(res){
+        
+        let data = res.responseJSON;
+        if (data.status===1) { 
+        location.href = "/home/login.html";
+        localStorage.removeItem("token");
+        }
     }
 })
 }
 basicInformation();
+
+$('#goOut').click(function(){
+    layer.confirm('is not?', {icon: 3, title:'提示'}, function(index){
+        //do something
+        localStorage.removeItem('token');
+        location.href = "/home/login.html";
+        layer.close(index);
+      });
+})
