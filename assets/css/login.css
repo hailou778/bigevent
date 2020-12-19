@@ -1,25 +1,21 @@
-/* 初始化设置 */
 * {
   margin: 0;
   padding: 0;
 }
+
 html,
 body {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-/* 加背景图 */
 body {
   background: url(/assets/images/login_bg.jpg) no-repeat center/cover;
 }
 .logo {
-  margin-top: 30px;
+  margin-top: 20px;
 }
-.title {
-  background: url(/assets/images/login_title.png) no-repeat center;
-  height: 60px;
-}
+
 .box {
   width: 400px;
   height: 310px;
@@ -29,23 +25,34 @@ body {
   transform: translate(-50%, -50%);
   background-color: #fff;
 }
-.zhuce {
+
+.title {
+  height: 60px;
+  background: url(/assets/images/login_title.png) no-repeat center;
+}
+
+.register {
   display: none;
 }
+
 .layui-form {
   padding: 0 30px;
 }
-#goDl {
+
+#goToRegi,
+#goToLogin {
   float: right;
 }
+
 .layui-form-item {
   position: relative;
 }
+
 .layui-icon {
   position: absolute;
   left: 10px;
   top: 10px;
 }
 .layui-input {
-  padding-left: 40px;
+  padding-left: 35px;
 }

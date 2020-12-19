@@ -1,33 +1,40 @@
-#footCenter {
+.textCenter {
   text-align: center;
 }
-.iconfont {
-  margin-right: 10px;
-}
+
+.iconfont,
 .layui-icon {
-  margin-left: 30px;
+  margin-right: 8px;
+}
+
+.layui-icon {
+  margin-left: 20px;
 }
 .layui-body {
   overflow: hidden;
 }
+
 .textAvatar {
   display: inline-block;
   width: 40px;
   height: 40px;
   background-color: #009688;
   border-radius: 50%;
-  line-height: 40px;
   text-align: center;
+  line-height: 40px;
   display: none;
 }
-#welcome {
+
+.text {
   font-size: 12px;
 }
-#userInfo2 {
+
+.layui-side .userInfo {
   text-align: center;
   padding: 10px 0;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid #000;
 }
+
 iframe {
-  background-color: beige;
+  background-color: rgb(242, 243, 245);
 }
